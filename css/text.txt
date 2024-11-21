@@ -1,0 +1,118 @@
+
+#chefs .container h2
+{
+    text-align: center;
+    font-family: var(--font-default);
+    text-transform: uppercase;
+    color: var(--color-third);
+    font-size: .875rem;
+}
+#chefs .container .head-p
+{
+    text-align: center;
+    font-size: 50px;
+    font-family: var(--font-primary);
+}
+#chefs .container .head-p span
+{
+    color: #f00;
+}
+#chefs .chef-items
+{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    box-sizing: border-box;
+    padding:20px 0;
+
+}
+
+#chefs .container .item
+{
+    transition: all var(--animation-duration);
+    -webkit-transition: all var(--animation-duration);
+    -moz-transition: all var(--animation-duration);
+    -ms-transition: all var(--animation-duration);
+    -o-transition: all var(--animation-duration);
+}
+#chefs .container .item img
+{
+    display: block;
+}
+#chefs .container .item img::before
+{
+    content: "";
+    background-image: url(../images/team-shape.svg);
+    height: 3.75rem;
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+}
+#chefs .container .item span
+{
+    font-size: 14px;
+    color: var(--color-third);
+    margin: 5px 0 10px;
+}
+#chefs .container .item p
+{
+    font-size: 15px;
+    color: var(--color-third);
+    font-family: var(--font-default);
+    font-style: italic;
+}
+.caption-img
+{
+    position: relative;
+}
+
+.item .icon-list
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--color-light-grey);
+    transform: translateX(100px);
+    -webkit-transform: translateX(100px);
+    -moz-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    -o-transform: translateX(100px);
+    opacity: 0;
+    /* transition: all var(--animation-duration) var(--animation-duration); */
+    -webkit-transition: all var(--animation-duration) var(--animation-duration);
+    -moz-transition: all var(--animation-duration) var(--animation-duration);
+    -ms-transition: all var(--animation-duration) var(--animation-duration);
+    -o-transition: all var(--animation-duration) var(--animation-duration);
+}
+.chef-items .inner-1:hover .icon-list
+{
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    opacity: 1;
+    transition: all var(--animation-duration) var(--animation-duration);
+}
+
+.chef-items .img-place-ch
+{
+    width: 100%;
+    position: relative;
+}
+.item .icon-list i
+{
+    font-size: 25px;
+    margin-block: 5px;
+    padding: 10px;
+    color: grey;
+}
+#chefs .item:hover
+{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+}
